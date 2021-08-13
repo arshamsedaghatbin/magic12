@@ -1,0 +1,86 @@
+
+entity Category {
+	 title String,
+     photoUrl  String,
+     photo AnyBlob,
+     voiceUrl String,
+     voiceFile AnyBlob,
+     description String,
+     advice String,
+     accountType AccountType
+}
+
+enum AccountType{
+	FREE , GOLD , SILVER
+}
+entity SubCategory {
+	 title String,
+     photoUrl  String,
+     photo AnyBlob,
+     voiceUrl String,
+     voiceFile AnyBlob,
+     masterDescription String,
+     masterAdvice String,
+     accountType AccountType
+}
+
+entity Action {
+     title String,
+     photoUrl  String,
+     photo AnyBlob,
+	 code String unique,
+     video AnyBlob,
+     videoUrl String,
+     masterDescription String,
+     accountType AccountType
+}
+
+entity BookMarkAction{
+    userDescription String
+}
+
+
+
+entity Practice{
+     title String,
+     photoUrl  String,
+     photo AnyBlob,
+     voiceUrl String,
+     voiceFile AnyBlob,
+     masterDescription String,
+     masterAdvice String,
+     briefMasterAdvice String,
+     accountType AccountType
+}
+entity PracticeSession{
+       tiltle String
+}
+
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	Action{bookMark} to BookMarkAction,
+	Category{subcategory} to SubCategory{category},
+    Practice {session} to PracticeSession{practice}
+   
+}
+relationship ManyToMany {
+    Category{action} to Action{category},
+    SubCategory{action} to Action{subCategory},
+    PracticeSession{action} to Action{session}
+}
+
+
+
+// Set pagination options
+//paginate JobHistory, Employee with infinite-scroll
+paginate * with pagination
+
+// Use Data Transfer Objects (DTO)
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
