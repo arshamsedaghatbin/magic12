@@ -43,7 +43,9 @@
     "devServerPort": 9060,
     "clientTheme": "none",
     "clientThemeVariant": "",
-    "reactive": false
+    "reactive": false,
+    "entities": ["Category", "SubCategory", "Action", "BookMarkAction", "Practice", "PracticeSession"],
+    "lastLiquibaseTimestamp": 1628846291000
   },
   "git-provider": "GitHub",
   "git-company": "arshamsedaghatbin",

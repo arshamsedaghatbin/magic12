@@ -1,0 +1,27 @@
+{
+  "name": "BookMarkAction",
+  "fields": [
+    {
+      "fieldName": "userDescription",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "action",
+      "otherEntityRelationshipName": "bookMark",
+      "relationshipName": "action"
+    }
+  ],
+  "entityTableName": "book_mark_action",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210813091809"
+}

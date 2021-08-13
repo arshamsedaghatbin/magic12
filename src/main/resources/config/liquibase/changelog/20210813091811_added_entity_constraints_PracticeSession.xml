@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+    <!--
+        Added the constraints for entity PracticeSession.
+    -->
+    <changeSet id="20210813091811-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="practice_session_id"
+                                 baseTableName="rel_practice_session__action"
+                                 constraintName="fk_rel_practice_session__action__practice_session_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="practice_session"/>
+
+        <addForeignKeyConstraint baseColumnNames="action_id"
+                                 baseTableName="rel_practice_session__action"
+                                 constraintName="fk_rel_practice_session__action__action_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="action"/>
+
+        <addForeignKeyConstraint baseColumnNames="practice_id"
+                                 baseTableName="practice_session"
+                                 constraintName="fk_practice_session__practice_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="practice"/>
+    </changeSet>
+</databaseChangeLog>

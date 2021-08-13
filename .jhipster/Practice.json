@@ -1,0 +1,62 @@
+{
+  "name": "Practice",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "photoUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "photo",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any"
+    },
+    {
+      "fieldName": "voiceUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "voiceFile",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any"
+    },
+    {
+      "fieldName": "masterDescription",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "masterAdvice",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "briefMasterAdvice",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accountType",
+      "fieldType": "AccountType",
+      "fieldValues": "FREE,GOLD,SILVER"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "practiceSession",
+      "otherEntityRelationshipName": "practice",
+      "relationshipName": "session"
+    }
+  ],
+  "entityTableName": "practice",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210813091810"
+}

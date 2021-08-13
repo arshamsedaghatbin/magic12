@@ -12,6 +12,24 @@ export const EntitiesMenu = props => (
     style={{ maxHeight: '80vh', overflow: 'auto' }}
   >
     <>{/* to avoid warnings when empty */}</>
+    <MenuItem icon="asterisk" to="/category">
+      <Translate contentKey="global.menu.entities.category" />
+    </MenuItem>
+    <MenuItem icon="asterisk" to="/sub-category">
+      <Translate contentKey="global.menu.entities.subCategory" />
+    </MenuItem>
+    <MenuItem icon="asterisk" to="/action">
+      <Translate contentKey="global.menu.entities.action" />
+    </MenuItem>
+    <MenuItem icon="asterisk" to="/book-mark-action">
+      <Translate contentKey="global.menu.entities.bookMarkAction" />
+    </MenuItem>
+    <MenuItem icon="asterisk" to="/practice">
+      <Translate contentKey="global.menu.entities.practice" />
+    </MenuItem>
+    <MenuItem icon="asterisk" to="/practice-session">
+      <Translate contentKey="global.menu.entities.practiceSession" />
+    </MenuItem>
     {/* jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here */}
   </NavDropdown>
 );

@@ -1,0 +1,26 @@
+{
+  "magic12App": {
+    "practiceSession": {
+      "home": {
+        "title": "Practice Sessions",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Practice Session",
+        "createOrEditLabel": "Create or edit a Practice Session",
+        "notFound": "No Practice Sessions found"
+      },
+      "created": "A new Practice Session is created with identifier {{ param }}",
+      "updated": "A Practice Session is updated with identifier {{ param }}",
+      "deleted": "A Practice Session is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Practice Session {{ id }}?"
+      },
+      "detail": {
+        "title": "Practice Session"
+      },
+      "id": "ID",
+      "tiltle": "Tiltle",
+      "action": "Action",
+      "practice": "Practice"
+    }
+  }
+}

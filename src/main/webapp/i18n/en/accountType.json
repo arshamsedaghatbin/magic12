@@ -1,0 +1,10 @@
+{
+  "magic12App": {
+    "AccountType": {
+      "null": "",
+      "FREE": "FREE",
+      "GOLD": "GOLD",
+      "SILVER": "SILVER"
+    }
+  }
+}
