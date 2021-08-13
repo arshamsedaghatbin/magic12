@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+    <!--
+        Added the constraints for entity SubCategory.
+    -->
+    <changeSet id="20210813091807-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="sub_category_id"
+                                 baseTableName="rel_sub_category__action"
+                                 constraintName="fk_rel_sub_category__action__sub_category_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="sub_category"/>
+
+        <addForeignKeyConstraint baseColumnNames="action_id"
+                                 baseTableName="rel_sub_category__action"
+                                 constraintName="fk_rel_sub_category__action__action_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="action"/>
+
+        <addForeignKeyConstraint baseColumnNames="category_id"
+                                 baseTableName="sub_category"
+                                 constraintName="fk_sub_category__category_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="category"/>
+    </changeSet>
+</databaseChangeLog>

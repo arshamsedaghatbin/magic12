@@ -7,6 +7,12 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "ماهیت ها",
+        "category": "Category",
+        "subCategory": "Sub Category",
+        "action": "Action",
+        "bookMarkAction": "Book Mark Action",
+        "practice": "Practice",
+        "practiceSession": "Practice Session",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

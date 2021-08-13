@@ -1,0 +1,33 @@
+{
+  "magic12App": {
+    "practice": {
+      "home": {
+        "title": "Practices",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Practice",
+        "createOrEditLabel": "Create or edit a Practice",
+        "notFound": "No Practices found"
+      },
+      "created": "A new Practice is created with identifier {{ param }}",
+      "updated": "A Practice is updated with identifier {{ param }}",
+      "deleted": "A Practice is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Practice {{ id }}?"
+      },
+      "detail": {
+        "title": "Practice"
+      },
+      "id": "ID",
+      "title": "Title",
+      "photoUrl": "Photo Url",
+      "photo": "Photo",
+      "voiceUrl": "Voice Url",
+      "voiceFile": "Voice File",
+      "masterDescription": "Master Description",
+      "masterAdvice": "Master Advice",
+      "briefMasterAdvice": "Brief Master Advice",
+      "accountType": "Account Type",
+      "session": "Session"
+    }
+  }
+}
